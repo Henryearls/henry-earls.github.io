@@ -12,27 +12,45 @@ h1 {
 }
 
 
-  
-  h2 {
+  /* enter*/
+  a {
     font-family: "cabazon", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 13vw;
+    font-size: 12.5vh;
     color: rgb(255, 0, 0); 
     text-align: center; 
-    position: static;
-    margin: 16vw
+    display: block;
+    position: relative;
+
   
    
   }
 
-  h2:hover {
+
+  a:link {
+    text-decoration: none;
+  }
+
+
+  a:hover {
     color: blue;
   }
 
 
 
+  .navigation {
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: red;
+    font-size: 20px; 
+    display:block;
+    margin:45vw; 
+    position: relative;
 
+
+  }
 
 
 p {
@@ -48,16 +66,6 @@ p {
 
 }
 
-a {
-    font-family: "cabazon", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 13vw;
-    color: rgb(255, 0, 0); 
-    text-align: center; 
-    position: static;
-    margin: 16vw
-}
 
 
 
