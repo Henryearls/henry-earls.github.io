@@ -88,3 +88,32 @@ p {
     width:110vw;
 }
 
+img{
+    width:5vw;
+}
+
+#monogram{
+    display: inline-block;
+    z-index: +1;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+    
+    h1 {
+      color:red;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+
+    #monogram{
+        display:none;
+    }
+  
+  }
