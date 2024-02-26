@@ -48,6 +48,10 @@ h2 {
   }
 
 
+  h1:hover {
+    color: rgb(255, 0, 0);
+  }
+
 
   .navigation {
     font-family: "source-sans-pro", sans-serif;
