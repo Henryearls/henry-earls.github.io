@@ -124,7 +124,85 @@ console.log(moods[moodsNumber2]);
 
 divElement2.innerHTML = moods[moodsNumber2];
 
-//
+//button three
+
+let moods3 = [
+        "Forest",
+        "Desert",
+        "Tundra",
+        "Savannah",
+        "Taiga",
+        "Grassland",
+        "Wetland",
+        "Marsh",
+        "Swamp",
+        "Jungle",
+        "Mountain",
+        "Canyon",
+        "Prairie",
+        "Arctic",
+        "Steppe",
+        "Plateau",
+        "Glacier",
+        "Valley",
+        "Fen",
+        "Delta"
+    ];
+    
+
+
+let divElement3 = document.getElementById("explore3");
+
+let moodsNumber3 = Math.floor(Math.random() * moods3.length);
+
+console.log(moodsNumber3)
+
+console.log(moods[moodsNumber3]);
+
+divElement3.innerHTML = moods[moodsNumber3];
+
+//button four
+
+let moods4 = [
+        "Abyssal",
+        "Boundless",
+        "Empty",
+        "Eerie",
+        "Foreboding",
+        "Infinite",
+        "Ominous",
+        "Profound",
+        "Shadowy",
+        "Sinister",
+        "Bottomless",
+        "Unfathomable",
+        "Desolate",
+        "Murky",
+        "Intimidating",
+        "Mysterious",
+        "Haunting",
+        "Dismal",
+        "Unyielding",
+        "Enigmatic"
+    ];
+    
+
+
+
+let divElement4 = document.getElementById("explore4");
+
+let moodsNumber4 = Math.floor(Math.random() * moods4.length);
+
+console.log(moodsNumber4)
+
+console.log(moods[moodsNumber4]);
+
+divElement4.innerHTML = moods[moodsNumber4];
+
+//sonder
+
+
+
 
 
 menuLinks.addEventListener('click', hideMobileMenu);

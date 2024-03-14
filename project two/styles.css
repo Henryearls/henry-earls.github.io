@@ -164,6 +164,13 @@
       height: 80px;
       margin: 0;
     }
+
+    .button-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
   
     #mobile-menu {
       position: absolute;
@@ -195,6 +202,12 @@
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
     padding: 200px 0;
+  }
+
+  .hero2 {
+    background: #000000;
+    background: linear-gradient(to right, #005c97, #363795);
+    padding: 200px 0;   
   }
   
   .hero__container {
@@ -417,8 +430,97 @@
     width: 100%;
   }
 
-
+/* button three */
+.main__btn3 {
+    font-size: 1.8rem;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+  }
   
+  .main__btn3 a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main__btn3:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff1ead;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+  
+  .main__btn3:hover {
+    color: #fff;
+  }
+  
+  .main__btn3:hover:after {
+    width: 100%;
+  }
+
+
+  /* button four */
+
+  .main__btn4 {
+    font-size: 1.8rem;
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+  }
+  
+  .main__btn4 a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main__btn4:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff1ead;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+  
+  .main__btn4:hover {
+    color: #fff;
+  }
+  
+  .main__btn4:hover:after {
+    width: 100%;
+  }
+ /* end of button four */
+
+
   .main__img--container {
     text-align: center;
   }
@@ -515,6 +617,9 @@
       padding: 12px 36px;
       margin: 2.5rem 0;
     }
+
+ 
+
   }
   
 
