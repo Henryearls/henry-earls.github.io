@@ -205,5 +205,7 @@ divElement4.innerHTML = moods[moodsNumber4];
 
 
 
+
+
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
