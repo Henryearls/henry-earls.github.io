@@ -54,152 +54,40 @@ const hideMobileMenu = () => {
 
 //button one
 
-let moods = [
-    "Majestic",
-    "Serene",
-    "Boundless",
-    "Pristine",
-    "Turquoise",
-    "Tranquil",
-    "Luminous",
-    "Undulating",
-    "Tempestuous",
-    "Mystical",
-    "Azure",
-    "Vast",
-    "Teeming",
-    "Crystal-clear",
-    "Ethereal",
-    "Dynamic",
-    "Coastal",
-    "Invigorating",
-    "Reflective",
-    "Sublime"
-];
+document.addEventListener("DOMContentLoaded", function() {
+    let moods = [
+        "Sonder", "Saudade", "Numinous", "Epiphany", "Eudaimonia", "Catharsis", "Weltschmerz", "Anagnorisis", "Ataraxia", "Hiraeth", 
+        "Ambedo", "Apodyopsis", "Onism", "Liberosis", "Vellichor", "Monachopsis", "Nighthawk", "Exulansis", "Lachesism", 
+        "Majestic", "Rolling", "Verdant", "Idyllic", "Tranquil", "Bucolic", "Lush", "Serene", "Expansive", "Sun-drenched", "Rustic", 
+        "Verdant", "Gentle", "Picturesque", "Flourishing", "Undulating", "Blissful", "Swaying", "Meadowy", "Open", "Fragrant", 
+        "Forest", "Desert", "Tundra", "Savannah", "Taiga", "Grassland", "Wetland", "Marsh", "Swamp", "Jungle", "Mountain", "Canyon", 
+        "Prairie", "Arctic", "Steppe", "Plateau", "Glacier", "Valley", "Fen", "Delta", "Abyssal", "Boundless", "Empty", "Eerie", 
+        "Foreboding", "Infinite", "Ominous", "Profound", "Shadowy", "Sinister", "Bottomless", "Unfathomable", "Desolate", "Murky", 
+        "Intimidating", "Mysterious", "Haunting", "Dismal", "Unyielding", "Enigmatic"
+    ];
 
-let divElement1 = document.getElementById("explore");
+    let divElement1 = document.getElementById("explore");
+    let divElement2 = document.querySelector(".hero__description");
 
-let moodsNumber = Math.floor(Math.random() * moods.length);
+    let moodsNumber = Math.floor(Math.random() * moods.length);
 
-console.log(moodsNumber)
+    console.log(moodsNumber);
+    console.log(moods[moodsNumber]);
 
-console.log(moods[moodsNumber]);
+    divElement1.textContent = moods[moodsNumber]; // Update the text content of the span
 
-divElement1.innerHTML = moods[moodsNumber];
+    if (moods[moodsNumber] === "Sonder") {
+        divElement2.textContent = "The realization that each random passerby is living a life as vivid and complex as your own"; // Update the text content of the paragraph
+    } else if (moods[moodsNumber] === "Saudade") {
+        divElement2.textContent = "a deep emotional state of melancholic longing for something or someone that is absent"; // Update the text content for another specific mood
+    } else {
+        divElement2.textContent = "Default text for other moods"; // Default text for other moods
+    }
+});
+
 
 //button two
 
-let moods2 = [
-        "Majestic",
-        "Rolling",
-        "Verdant",
-        "Idyllic",
-        "Tranquil",
-        "Bucolic",
-        "Lush",
-        "Serene",
-        "Expansive",
-        "Sun-drenched",
-        "Rustic",
-        "Verdant",
-        "Gentle",
-        "Picturesque",
-        "Flourishing",
-        "Undulating",
-        "Blissful",
-        "Swaying",
-        "Meadowy",
-        "Open",
-        "Fragrant"
-    ];
-    
-
-let divElement2 = document.getElementById("explore2");
-
-let moodsNumber2 = Math.floor(Math.random() * moods2.length);
-
-console.log(moodsNumber2)
-
-console.log(moods[moodsNumber2]);
-
-divElement2.innerHTML = moods[moodsNumber2];
-
-//button three
-
-let moods3 = [
-        "Forest",
-        "Desert",
-        "Tundra",
-        "Savannah",
-        "Taiga",
-        "Grassland",
-        "Wetland",
-        "Marsh",
-        "Swamp",
-        "Jungle",
-        "Mountain",
-        "Canyon",
-        "Prairie",
-        "Arctic",
-        "Steppe",
-        "Plateau",
-        "Glacier",
-        "Valley",
-        "Fen",
-        "Delta"
-    ];
-    
-
-
-let divElement3 = document.getElementById("explore3");
-
-let moodsNumber3 = Math.floor(Math.random() * moods3.length);
-
-console.log(moodsNumber3)
-
-console.log(moods[moodsNumber3]);
-
-divElement3.innerHTML = moods[moodsNumber3];
-
-//button four
-
-let moods4 = [
-        "Abyssal",
-        "Boundless",
-        "Empty",
-        "Eerie",
-        "Foreboding",
-        "Infinite",
-        "Ominous",
-        "Profound",
-        "Shadowy",
-        "Sinister",
-        "Bottomless",
-        "Unfathomable",
-        "Desolate",
-        "Murky",
-        "Intimidating",
-        "Mysterious",
-        "Haunting",
-        "Dismal",
-        "Unyielding",
-        "Enigmatic"
-    ];
-    
-
-
-
-let divElement4 = document.getElementById("explore4");
-
-let moodsNumber4 = Math.floor(Math.random() * moods4.length);
-
-console.log(moodsNumber4)
-
-console.log(moods[moodsNumber4]);
-
-divElement4.innerHTML = moods[moodsNumber4];
-
-//sonder
 
 
 
