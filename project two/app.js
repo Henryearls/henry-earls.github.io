@@ -142,5 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
