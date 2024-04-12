@@ -2,6 +2,11 @@ const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo');
 
+
+
+
+
+
 // Display Mobile Menu
 const mobileMenu = () => {
   menu.classList.toggle('is-active');
@@ -133,10 +138,38 @@ document.addEventListener("DOMContentLoaded", function() {
     heroElement.style.background = `linear-gradient(to right, ${randomColor}, #363795)`;
 });
 
+var popupOverlay = document.querySelector('.popup-overlay');
+var popup = document.querySelector('.popup');
+var closeBtn = document.querySelector('.close-btn');
 
+function openPopup() {
+    popupOverlay.style.display = 'block';
+    popup.style.display = 'block';
+}
 
+function closePopup() {
+    popupOverlay.style.display = 'none';
+    popup.style.display = 'none';
+}
 
+closeBtn.addEventListener('click', closePopup);
+popupOverlay.addEventListener('click', closePopup);
 
+// Show popup after 5 seconds (adjust as needed)
+let veryRandomNumber = Math.floor(Math.random() * 10000);
+console.log(veryRandomNumber)
+
+setTimeout(openPopup, veryRandomNumber);
+
+setTimeout(openPopup, 15000);
+
+setTimeout(openPopup, 20000);
+
+setTimeout(openPopup, 30000);
+
+setTimeout(openPopup, 40000);
+
+setTimeout(openPopup, 50000);
 
 
 
