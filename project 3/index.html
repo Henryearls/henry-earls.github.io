@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particles Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function(){
+            console.log('particles.json loaded...');
+            // Call the updateParticles function initially
+            updateParticles();
+            // Call the updateParticles function every hour
+            setInterval(updateParticles, 3600000); // 3600000 milliseconds = 1 hour
+        });
+        
+        // Function to update the particles configuration
+        function updateParticles() {
+            let today = new Date();
+            let thisHour = today.getHours();
+
+            // Map the current hour to a range of particles from 100 to 400
+            let mappedParticles = map(thisHour, 0, 23, 100, 400);
+
+            // Modify the number of particles based on the mapped value
+            let particlesJSON = {
+                "particles": {
+                    "number": {
+                        "value": mappedParticles // Set the number of particles to the mapped value
+                    },
+                    "size": {
+                        "value": 3 // Set the size of the particles
+                    },
+                    "move": {
+                        "speed": 1 // Set the speed of the particles (adjust as needed)
+                    },
+                    // Other particle configurations...
+                },
+                "interactivity": {
+                    // Interactivity configurations...
+                }
+            };
+
+            // Use the modified configuration
+            particlesJS('particles-js', particlesJSON);
+        }
+
+        // DO NOT TOUCH THIS!
+        function map(value, low1, high1, low2, high2) {
+            return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+        }
+    </script>
+ 
+</body>
+</html>
