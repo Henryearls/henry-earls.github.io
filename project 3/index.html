@@ -9,9 +9,15 @@
 </head>
 <body>
 
+
+
+
+
     <div id="particles-js"></div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="time.js"></script>
 
     <script>
         particlesJS.load('particles-js', 'particles.json', function(){
@@ -28,7 +34,7 @@
             let thisHour = today.getHours();
 
             // Map the current hour to a range of particles from 100 to 400
-            let mappedParticles = map(thisHour, 0, 23, 100, 400);
+            let mappedParticles = map(thisHour, 0, 23, 0, 400);
 
             // Modify the number of particles based on the mapped value
             let particlesJSON = {
